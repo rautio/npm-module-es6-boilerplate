@@ -1,0 +1,61 @@
+{
+  "name": "npm-module-es6-boilerplate",
+  "version": "0.1.0",
+  "description": "A boilerplate to build npm modules using es6.",
+  "main": "lib/npm-module-es6-boilerplate.min.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
+    "test:travis": "mocha --compilers js:babel-core/register ./test/*.spec.js",
+    "cover": "babel-node node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha ./test/*.spec.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "lint": "esw src test",
+    "lint:watch": "esw -w src test",
+    "build": "webpack -p --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "prepublish": "npm run build",
+    "doc": "jsdoc src -r -d doc/ --private --readme README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rautio/npm-module-es6-boilerplate.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "boilerplate",
+    "es6",
+    "npm es6",
+    "npm module"
+  ],
+  "author": {
+    "name": "Oskari Rautiainen",
+    "email": "oskari.rautiainen@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rautio/npm-module-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/rautio/npm-module-es6-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babili-webpack-plugin": "^0.1.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.9.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-watch": "^3.1.3",
+    "expect": "^21.2.1",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "webpack": "^3.8.1",
+    "yargs": "^9.0.1"
+  }
+}

@@ -11,6 +11,7 @@
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "lint": "esw src test",
     "lint:watch": "esw -w src test",
+    "clean": "rimraf lib",
     "build": "webpack -p --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "prepublish": "npm run build",
@@ -24,9 +25,7 @@
     "npm",
     "module",
     "boilerplate",
-    "es6",
-    "npm es6",
-    "npm module"
+    "es6"
   ],
   "author": {
     "name": "Oskari Rautiainen",
@@ -55,6 +54,7 @@
     "jsdoc": "^3.5.5",
     "mocha": "^4.0.1",
     "mocha-lcov-reporter": "^1.3.0",
+    "rimraf": "^2.6.2",
     "webpack": "^3.8.1",
     "yargs": "^9.0.1"
   }

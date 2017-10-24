@@ -1,13 +1,9 @@
-[![travis][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
+[![travis][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] 
 
 [travis-image]: https://travis-ci.org/rautio/npm-module-es6-boilerplate.svg?branch=master
 [travis-url]: https://travis-ci.org/rautio/npm-module-es6-boilerplate
 [coveralls-image]:https://coveralls.io/repos/github/rautio/npm-module-es6-boilerplate/badge.svg?branch=master
 [coveralls-url]:https://coveralls.io/github/rautio/npm-module-es6-boilerplate?branch=master
-[npm-image]: https://img.shields.io/npm/v/npm-module-es6-boilerplate.svg
-[npm-url]: https://npmjs.org/package/npm-module-es6-boilerplate
-[downloads-image]: https://img.shields.io/npm/dm/npm-module-es6-boilerplate.svg
-[downloads-url]: https://npmjs.org/package/npm-module-es6-boilerplate
 
 Boilerplate structure to start writing an npm module using es6.
 

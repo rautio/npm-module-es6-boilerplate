@@ -1,6 +1,7 @@
-//Here is where you would import the functions you would want from each of you
-import example from './example';
-
+/**
+ * Default function
+ * @return {[string]} Returns 'init'
+ */
 export default () => {
-  example()
+  return 'Init';
 }

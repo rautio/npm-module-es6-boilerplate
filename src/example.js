@@ -1,3 +1,7 @@
-export default function () {
-  return 'This is a test.';
+/**
+ * example function
+ * @return {[string]} Returns 'init'
+ */
+export default () => {
+  return 'Init';
 }

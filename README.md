@@ -1,4 +1,4 @@
-[![travis][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] 
+[![travis][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 [travis-image]: https://travis-ci.org/rautio/npm-module-es6-boilerplate.svg?branch=master
 [travis-url]: https://travis-ci.org/rautio/npm-module-es6-boilerplate
@@ -11,24 +11,20 @@ Boilerplate structure to start writing an npm module using es6.
 * Transpile with [babel](https://babeljs.io/) (ES6 to ES5)
 * Build with [webpack](https://webpack.github.io/) (manage dev and build modes)
 * Lint with [eslint](https://eslint.org/)
-* Cover with [istanbul](https://istanbul.js.org/)
-* Test with [mocha](https://mochajs.org/) and [expect](https://github.com/mjackson/expect)
+* Test and coverage with [jest](https://facebook.github.io/jest/)
 * Test builds with [travis](https://travis-ci.org/)
 * Automatically publish coverage with [coveralls](https://coveralls.io/) through travis
 
 
 ## Commands:
 * `npm test` - Run tests using mocha.
-* `npm run test:watch` - Run tests in watch mode.
-* `npm run test:travis` - Run test command (specifically for travis builds).
-* `npm run cover` - Run code coverage analysis using istanbul.
-* `npm run coveralls` - 
+* `npm run test` - Run tests.
+* `npm run coveralls` - Run tests and output coverage to coveralls.
 * `npm run lint` - Run linting using eslint and the defined rules and settings in .eslintrc.
 * `npm run lint:watch` - Run linting in watch mode.
 * `npm run clean` - Remove the `lib/` folder.
 * `npm run build`- Run the code transpilation and output an obfuscated `.min.js` file.
 * `npm run dev` - Run the code transpilation, lint and test all in watch mode. Used while developing.
-* `npm run prepublish` - Run a build. This automatically runs before publishing when you run `npm publish ./`
 * `npm run doc` - Generate documentation using jsdoc from comments within the code
 
 ## Getting started:
